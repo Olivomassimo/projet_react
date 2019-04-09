@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Mytravels from "./My-travels";
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1 className="App-title">My travels</h1>
         </header>
+        <Mytravels
+          destination="Etats units "
+          country="hawai"
+          photo="https://zupimages.net/up/19/15/7242.jpg"
+          distance="1m"
+        />
+        <Mytravels
+          destination="Italie"
+          country="Rome"
+          photo="https://zupimages.net/up/19/15/aolu.jpg"
+          distance= "1m"
+        />
       </div>
     );
   }
